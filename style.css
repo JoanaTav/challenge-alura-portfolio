@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor--de--destaque: #d0a2f7;
+    --cor--do--body: #FFE6E6;
+    --cor--de--fundo:#B784B7;
+    --cor--de--texto:black;
+    --cor--de--fundo--secundaria: #E1AFD1;
+    --cor--de--destaque--secundaria:#711F74;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: initial;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style: none; /* Remove as bolinhas */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background: var(--cor--do--body); 
+    cursor: url("./assets/mouse-cursor.png"), auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+/* CABEÇALHO */
+
+.header {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px; 
+    box-sizing: border-box; 
+}
+
+.nome_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nome_logo p {
+    flex-wrap: nowrap;
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color:var(--cor--de--destaque--secundaria);
+}
+
+.navegacao_header {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px;
+}
+
+ .navegacao_header ul {
+    padding: 0;
+ }
+
+
+.navegacao_header a {
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.navegacao_header a:hover {
+    font-size: 1.1em;
+    border-bottom: 4px solid var(--cor--de--destaque);
+}
+
+
+/* APRESENTAÇÃO */
+
+.secao_apresentacao {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.apresentacao_left {
+    display: flex;
+    width: 64%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.apresentacao_textos h1 {
+    font-family: Raleway;
+    font-size: 3.25em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.apresentacao_textos p {
+    font-family: Raleway;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 2%;
+    line-height: normal;
+}
+
+.apresentacao_link{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.apresentacao_link ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px; 
+    padding: 0;
+}
+
+.apresentacao_link li {
+    display: flex;
+}
+
+.apresentacao_link a {
+    display: flex;
+    flex-direction: row;
+    font-family: Raleway;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--cor--de--destaque--secundaria);
+    line-height: normal;
+    padding-right: 32px;
+    background: url(./assets/arrow.png) no-repeat right center;
+}
+
+.apresentacao_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.apresentacao_img img {
+    width: 90%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+/* SOBRE MIM */
+
+.sobre_mim {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background-color: var(--cor--de--fundo--secundaria);
+}
+
+.sobre_mim_textos {
+    display: flex;
+    padding: 6.67%;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.sobre_mim h2 {
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sobre_mim p {
+    width: 64%;
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sobre_mim img {
+    display: flex;
+    align-self: flex-start;
+}
+
+/* SKILLS E HOBBIES */
+
+.skills_hobbies {
+    display: flex;
+    width: 80%;
+    padding: 2% 0 5% 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+    box-sizing: border-box;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.skills h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 2%;
+}
+
+.skills_icons {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.skills_icons ul {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.skills_icons li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    width: 11rem;
+    height: 10.85rem;
+    flex-direction: column;
+    background: var(--cor--de--fundo--secundaria);
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px 3px rgba(0,0,0,0.1);
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 2%;
+}
+
+.hobbies_icon ul {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+}
+
+.hobbies_icon li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    width: 11rem;
+    height: 10.85rem;
+    background: var(--cor--de--fundo--secundaria);
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px 3px rgba(0,0,0,0.1);
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+}
+
+/* FORMAÇÃO ACADÊMICA */
+
+.formacao_academica {
+    display: flex;
+    width: 100%;
+    padding: 2% 0 5% 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background: var(--cor--de--fundo--secundaria);
+}
+
+.formacao_academica h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.experiencias_academicas {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.experiencias_academicas ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    gap: 32px;
+    align-items: center;
+    width: 100%;
+
+}
+
+.experiencias_academicas li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    background: var(--cor--de--fundo);
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px 3px rgba(0,0,0,0.1);
+}
+
+.experiencias_academicas h4 {
+    font-family: Raleway;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.experiencias_academicas p {
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* EXPERIÊNCIA PROFISSIONAL */
+
+.experiencia_profissional {
+    display: flex;
+    box-sizing: border-box;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 2% 0 4% 0;
+}
+
+.experiencia_profissional h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.experiencia_box_1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 80px;
+}
+
+.experiencia_box_left {
+    display: flex;
+    width: 65%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.experiencia_box_left img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.experiencia_box_right {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.experiencia_box_right h5{
+    font-family: Raleway;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.experiencia_box_right p {
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.botoes {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.botao_repo {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid  var(--cor--de--destaque);
+    color: var(--cor--de--destaque--secundaria);
+    background-color: var(--cor--de--destaque);
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.botao_repo:hover {
+    background: var(--cor--de--fundo);
+    color: var(--cor--de--destaque--secundaria);
+    cursor: pointer;
+}
+
+.botao_demo {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background:  var(--cor--de--destaque);
+    color: var(--cor--de--destaque--secundaria);
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 3px solid  var(--cor--de--fundo);
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.botao_demo:hover {
+    background-color: var(--cor--de--destaque--secundaria);
+    color: var(--cor--do--body);
+    border: 1px solid var(--cor--de--destaque);
+}
+
+.experiencia_box_2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 80px;
+}
+
+/* FORMULÁRIO DE CONTATO */
+
+.formulario {
+    display: flex;
+    width: 100%;
+    padding: 5% 0 2% 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--cor--de--fundo--secundaria);
+    margin: 0;
+}
+
+.formulario_box {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    gap: 90px;
+}
+
+.formulario_imagem {
+    display: flex;
+    width: 50%;
+}
+
+.formulario_imagem img {
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.formulario_contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+}
+
+.formulario_contato_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.formulario_contato_txt h4 {
+    display: flex;
+    margin: 0;
+    font-family: Raleway;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.formulario_contato_txt p {
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+}
+
+/* Estilos para os inputs de contato */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%; 
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 7px;
+    align-self: stretch;
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: none;
+    border-bottom: 1px solid var(--cor--de--destaque);
+    resize: none;
+    outline: none;
+}
+
+
+.form input[type="text"]::placeholder,
+.form input[type="email"]::placeholder,
+.form textarea::placeholder {
+    color: var(--cor--de--destaque--secundaria);
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+}
+
+
+/* Estilos para o botão enviar mensagem*/
+.form .submit {
+    display: flex;
+    padding: 16px;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: auto; 
+    background: var(--cor--de--destaque);
+    color: var(--cor--de--destaque--secundaria);
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 2px solid var(--cor--de--destaque--secundaria);
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.form .submit:hover {
+    background: var(--cor--de--destaque--secundaria);
+    color: var(--cor--do--body);
+    border: 2px solid var(--cor--de--destaque);
+}
+
+/* RODAPÉ */
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--cor--de--destaque--secundaria);
+    padding: 20px;
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* RESPONSIVIDADE */
+
+/* Para telas menores que 600px (celulares) */
+@media only screen and (max-width: 768px) {
+    .container{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .header {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .nome_logo {
+        margin-bottom: 10px; 
+    }
+
+    .navegacao_header {
+        display: none;
+    }
+    .secao_apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: auto;
+    }
+
+    .apresentacao_img img {
+        padding-left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills_icons ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobbies_icon ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experiencias_academicas ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .experiencia_profissional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiencia_box_1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .experiencia_box_2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .botoes {
+        width: 100%;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario_imagem {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    .form .submit {
+        width: 100%;
+    }
+
+}
