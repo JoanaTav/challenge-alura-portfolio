@@ -16,6 +16,10 @@ Meu resultado está longe de estar perfeito mas me orgulho de ter conseguido ter
 ![preview](https://github.com/JoanaTav/challenge-alura-portfolio/assets/157071427/7b825a42-a53d-4950-ab8b-7919b5b227a4)
 
 
+<h2>Badge referente a entrega do Challenge</h2>
+
+![Badge-Portfólio](https://github.com/JoanaTav/challenge-alura-portfolio/assets/157071427/40d53744-d886-48df-9bc5-8068acddda0b)
+
 <h2>⚙️Tecnologias Utilizadas</h2>
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,vscode)](https://skillicons.dev)
