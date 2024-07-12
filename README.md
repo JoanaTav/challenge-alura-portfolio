@@ -1,6 +1,6 @@
 # Challenge Portfólio Alura
 
-Projeto desenvolvido durante o curso Formação Front End T6 - ONE + Alura
+Projeto desenvolvido durante o curso Formação Front End T6 - ONE Oracle + Alura
 
 O desafio era criar um portfólio responsivo utilizando FlexBox e que também incluísse, um formulário de contato.
 Fiz algumas modificações comparado ao projeto Figma original (link abaixo)
